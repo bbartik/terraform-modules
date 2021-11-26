@@ -11,7 +11,7 @@ This repo contains Terraform modules I created for learning and demo purpose. So
 
 ```
 module "aws_tgw_tagged_subnets" {
-  source = "git::https://github.com/bbartik/terraform-modules.git/aws-tgw-tagged-subnets"
+  source = "git::https://github.com/bbartik/terraform-modules.git//aws-tgw-tagged-subnets"
 
   owner = "bbartik"
   cidr_block = "10.50.255.0/24"
@@ -21,7 +21,7 @@ module "aws_tgw_tagged_subnets" {
 
 ```
 module "aws_tgw_attachment" {
-  source = "git::https://github.com/bbartik/terraform-modules.git/aws-tgw-attachment"
+  source = "git::https://github.com/bbartik/terraform-modules.git//aws-tgw-attachment"
 
   owner = "bbartik"
   base_tag = "BB-Terraform-Lab"
