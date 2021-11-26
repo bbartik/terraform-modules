@@ -4,8 +4,8 @@ This repo contains Terraform modules I created for learning and demo purpose. So
 
 # What they do
 
-aws-tgw-tagged-subnets: creates subnets in a VPC and tags them with the value "attach_to_tgw:true"
-aws-tgw-attachment: returns a list of subnet ids based on the above tag and uses them in the TGW attachment
+aws-tgw-tagged-subnets: creates one /28 subnet per AZ in a VPC and tags them with the value "attach_to_tgw:true" \
+aws-tgw-attachment: returns a list of subnet ids based on the above tag and uses them in the TGW attachment \
 
 # Usage
 
