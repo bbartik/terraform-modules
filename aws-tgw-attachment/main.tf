@@ -37,7 +37,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "this" {
   }
 }
 
-resource "aws_ec2_transit_gateway_route" "example" {
+resource "aws_ec2_transit_gateway_route" "this" {
   destination_cidr_block         = data.aws_vpc.this.cidr_block
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.this.id
   transit_gateway_route_table_id = data.aws_ec2_transit_gateway_route_table.this.id
